@@ -10,12 +10,7 @@ $bgColor: #eee;
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-// .browserupgrade {
-//   margin: 0.2em 0;
-//   background: #ccc;
-//   color: #000;
-//   padding: 0.2em 0;
-// }
+
 body{
   background-color: $bgColor;
   /*define font-size at app level*/
@@ -182,7 +177,7 @@ header {
       .seller-name{
         font-weight: bold;
           &.verified::after{
-          content: 'vf'; /*add tick mark utf code */
+          content: 'vf'; /*TODO: add tick mark utf code */
           color: red;
         }
       }
@@ -205,9 +200,6 @@ header {
   }
 
   .gallery{
-    .seller-detail{
-
-    }
     .images{
       display: flex;
       .more{  
@@ -287,12 +279,8 @@ footer {
   border-top: 1px solid $bgColor;
 }
 
-
 /* Customize container to show mobile view always*/
-
-// @media (min-width: 768px) {
-//   body {
-//     max-width: 425px;
-//     margin: auto;
-//   }
-// }
+body{
+  width: 425px;
+  margin: auto;
+}
