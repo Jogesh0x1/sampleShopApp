@@ -13,7 +13,7 @@ $bgColor: #eee;
 
 body{
   background-color: $bgColor;
-  /*define font-size at app level*/
+  margin-top: 55px; /*spacing for fixed header*/
 }
 
 /* Custom page header */
@@ -23,6 +23,10 @@ header {
   padding: 15px;
   background-color: $primaryColor;
   min-height: 50px;
+  position: fixed;
+  width: inherit;
+  top:0;
+
   .header__brand {
     float: left;
   }
