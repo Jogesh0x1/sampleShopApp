@@ -9,7 +9,7 @@
 
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" type="text/css" href="icons/font/flaticon.css"> 
+  <link rel="stylesheet" type="text/css" href="icons/font/flaticon.css">
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
@@ -41,7 +41,7 @@
           Are you a Seller?
         </a>
       <a href="#" class="navbar__options--search"><i class="glyphicon glyphicon-search"></i></a>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -63,10 +63,16 @@
   </div>
 
   <div class="tile page-links">
-    <div><i class="flaticon-money"></i><span class="pl-title"></span></div>
-    <div><i class="flaticon-"></i><span class="pl-title"></span></div>
-    <div><i class="flaticon-shopping-bag"></i><span class="pl-title"></span></div>
-    <div><i class="flaticon-shopping-cart"></i><span class="pl-title"></span></div>
+    <div class="pl-row ">
+      <div><i class="flaticon-money"></i><span class="pl-title">Products to sell</span></div>
+      <div><i class="flaticon-money"></i><span class="pl-title">my products</span></div>
+    </div>
+    <div class="divider-hz"></div>
+
+    <div class="pl-row">
+      <div><i class="flaticon-shopping-bag"></i><span class="pl-title">browse shops</span></div>
+      <div><i class="flaticon-shopping-cart"></i><span class="pl-title">Find buyers</span></div>
+    </div>
   </div>
 
   <div class="tile premium showcase">
@@ -78,32 +84,54 @@
       </span>
     </div>
     <div class="seller">
-      <div class=""><img src="" alt="seller-icon"> </div>
+      <div class="seller-icon"><img src="images/profile1.png" alt="seller-icon"> </div>
       <div class="seller-info">
         <div class="seller-name verified">Naresh Cloth Bazzar </div>
         <div class="seller-city">Ahmedabad</div>
         <div class="seller-summary">Best sellers of amazing Kurtis and Sarees</div>
-        
+
       </div>
-      <div>
-        <a href="#" class="follow"></a>
+      <div class="seller-connect">
+        <a href="#" class="follow">+ Follow</a>
       </div>
-      <div class="seller-detail">We are a Premium Seller. New Collection book faster. Limited stocks only, only available for next 24 hours, book soon...</div>
     </div>
 
     <div class="gallery">
-      <div><img src="images/showcase-main.png" alt="product"></div>
-      <div><img src="images/showcase1.png" alt=""></div>
-      <div><a href=""><img src="images/showcase1.png" alt=""></a></div>
+      <div class="seller-detail">We are a Premium Seller. New Collection book faster. Limited stocks only, only available for next 24 hours, book soon...</div>
+      <div class="images">
+        <div class="main"><img src="images/showcase-main.png" alt="product"></div>
+        <div class="more">
+          <div><img src="images/showcase1.png" alt=""></div>
+          <div>
+            <a href="#" class="show-more">
+           <img src="images/showcase1.png" alt="">
+            <span class="show-more-text">
+            11 +
+            </span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="more-products">
-      <div><img src="images/showcase-more.png" alt=""></div>
-      <div><img src="images/showcase-more.png" alt=""></div>
-      <div><img src="images/showcase-more1.png" alt=""></div>
-      <div><img src="images/showcase-more.png" alt=""></div>
-      <div><img src="images/showcase-more1.png" alt=""></div>
-      <div><img src="images/showcase-more1.png" alt=""></div>
+      <div class="title">
+        More Products by Naresh Bazaar
+      </div>
+      <div class="images">
+        <div><img src="images/showcase-more.png" alt=""></div>
+        <div><img src="images/showcase-more1.png" alt=""></div>
+        <div><img src="images/showcase-more.png" alt=""></div>
+        <div><img src="images/showcase-more.png" alt=""></div>
+        <div><img src="images/showcase-more1.png" alt=""></div>
+        <div class=""><a href="" class="show-more"><img src="images/showcase-more1.png" alt="">
+        <span class="show-more-text">
+            +322 <br> Visit Shops
+            </span>
+        </a>
+
+        </div>
+      </div>
     </div>
 
     <div class="interact">
@@ -114,41 +142,44 @@
     </div>
 
     <div class="chat-history">
-      <div class="chat">
-        <div class="user-dp"><img src="images/user.png" alt="user profile">  </div>
-        <div class="msg">
-          <span class="user-name">Ramya</span>
-          <span class="user-city">Coimbatore</span>
-          <span class="msg-body">Hi pls send updates to my number 80*****90, I am interested.</span>
+      <div class="chat-item">
+        <div class="user-dp"><img src="images/profile1.png" alt="user profile"> </div>
+        <div>
+          <div class="msg">
+            <span class="user-name">Ramya</span>
+            <span class="user-city">Coimbatore</span>
+            <span class="msg-body">Hi pls send updates to my number 80*****90, I am interested.</span>
+          </div>
+          <div class="connect-options">
+            <i class="flaticon-whatsapp"></i>
+            <a href="#">View Number</a>
+            <span>+</span>Connect
+          </div>
         </div>
-        <div class="connect-options">
-          <i class="flaticon-whatsapp"></i>
-          <a href="#">View Number</a>
-          <span>+</span>Connect
+        <div>2D</div>
+      </div>
+      <div class="chat-item">
+        <div class="user-dp"><img src="images/profile1.png" alt="user profile"> </div>
+        <div>
+          <div class="msg">
+            <span class="user-name">Ramya</span>
+            <span class="user-city">Coimbatore</span>
+            <span class="msg-body">Hi pls send updates to my number 80*****90, I am interested.</span>
+          </div>
+          <div class="connect-options">
+            <i class="flaticon-whatsapp"></i>
+            <a href="#">View Number</a>
+            <span>+</span>Connect
+          </div>
         </div>
         <div>2D</div>
       </div>
     </div>
   </div>
-   <div class="chat-history">
-      <div class="chat">
-        <div class="user-dp"><img src="images/user.png" alt="user profile">  </div>
-        <div class="msg">
-          <span class="user-name">Ramya</span>
-          <span class="user-city">Coimbatore</span>
-          <span class="msg-body">Hi pls send updates to my number 80*****90, I am interested.</span>
-        </div>
-        <div class="connect-options">
-          <i class="flaticon-whatsapp"></i>
-          <a href="#">View Number</a>
-          <span>+</span>Connect
-        </div>
-        <div>2D</div>
-      </div>
-    </div>
+
   </div>
   <div class="post-msg">
-    <div class="user-dp"><img src="images/user.png" alt="user profile">  </div>
+    <div class="user-dp"><img src="images/profile1.png" alt="user profile"> </div>
     <div>
       <input class="post-msg-text" type="text" placeholder="Write a comment...">
       <button class="post-msg-btn">Comment</button>
